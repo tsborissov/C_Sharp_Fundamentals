@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Extract Person Information", "01. Extract Person Information\01. Extract Person Information.csproj", "{54F22395-95DE-4D0A-85C4-F019A50F7B43}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Ascii Sumator", "02. Ascii Sumator\02. Ascii Sumator.csproj", "{9048572B-8A3B-4DA5-B855-8BB7208C54A0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Treasure Finder", "03. Treasure Finder\03. Treasure Finder.csproj", "{6D1A32FB-2B7A-417A-80C3-69913CE11C38}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Morse Code Translator", "..\04. Morse Code Translator\04. Morse Code Translator\04. Morse Code Translator.csproj", "{08110B89-99D6-43F9-8D1A-3BF6F6E363B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54F22395-95DE-4D0A-85C4-F019A50F7B43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54F22395-95DE-4D0A-85C4-F019A50F7B43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54F22395-95DE-4D0A-85C4-F019A50F7B43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54F22395-95DE-4D0A-85C4-F019A50F7B43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9048572B-8A3B-4DA5-B855-8BB7208C54A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9048572B-8A3B-4DA5-B855-8BB7208C54A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9048572B-8A3B-4DA5-B855-8BB7208C54A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9048572B-8A3B-4DA5-B855-8BB7208C54A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D1A32FB-2B7A-417A-80C3-69913CE11C38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D1A32FB-2B7A-417A-80C3-69913CE11C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D1A32FB-2B7A-417A-80C3-69913CE11C38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D1A32FB-2B7A-417A-80C3-69913CE11C38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08110B89-99D6-43F9-8D1A-3BF6F6E363B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08110B89-99D6-43F9-8D1A-3BF6F6E363B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08110B89-99D6-43F9-8D1A-3BF6F6E363B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08110B89-99D6-43F9-8D1A-3BF6F6E363B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34F989E7-4D41-4E8B-9D36-8B9C790DD0E4}
+	EndGlobalSection
+EndGlobal

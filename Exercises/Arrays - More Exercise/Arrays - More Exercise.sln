@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Encrypt, Sort and Print Array", "01. Encrypt, Sort and Print Array\01. Encrypt, Sort and Print Array.csproj", "{040D03BA-300B-41BD-A085-7DE6AC7F7D66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Pascal Triangle", "02. Pascal Triangle\02. Pascal Triangle.csproj", "{F6C01283-A654-4F84-89E0-DB9A54C85D54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Recursive Fibonacci", "03. Recursive Fibonacci\03. Recursive Fibonacci.csproj", "{A44F9DF0-7481-4D94-8609-5F5E99D18109}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{040D03BA-300B-41BD-A085-7DE6AC7F7D66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{040D03BA-300B-41BD-A085-7DE6AC7F7D66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{040D03BA-300B-41BD-A085-7DE6AC7F7D66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{040D03BA-300B-41BD-A085-7DE6AC7F7D66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6C01283-A654-4F84-89E0-DB9A54C85D54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6C01283-A654-4F84-89E0-DB9A54C85D54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6C01283-A654-4F84-89E0-DB9A54C85D54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6C01283-A654-4F84-89E0-DB9A54C85D54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A44F9DF0-7481-4D94-8609-5F5E99D18109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A44F9DF0-7481-4D94-8609-5F5E99D18109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A44F9DF0-7481-4D94-8609-5F5E99D18109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A44F9DF0-7481-4D94-8609-5F5E99D18109}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E14C9AC0-7B12-4CD0-93ED-1DEE7F6D8178}
+	EndGlobalSection
+EndGlobal
