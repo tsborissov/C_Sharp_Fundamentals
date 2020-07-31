@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Text;
 
 namespace _1._Password_Reset
 {
@@ -13,7 +14,10 @@ namespace _1._Password_Reset
             while (true)
             {
                 string input = Console.ReadLine();
-                if (input == "Done") { break; }
+                if (input == "Done")
+                { 
+                    break;
+                }
 
                 string[] command = input.Split().ToArray();
 
@@ -21,14 +25,14 @@ namespace _1._Password_Reset
                 {
                     case "TakeOdd":
 
-                        string tempStr = string.Empty;
+                        StringBuilder oddChars = new StringBuilder();
 
                         for (int i = 1; i < password.Length; i += 2)
                         {
-                            tempStr += password[i];
+                            oddChars.Append(password[i]);
                         }
 
-                        password = tempStr;
+                        password = oddChars.ToString();
 
                         Console.WriteLine(password);
 
