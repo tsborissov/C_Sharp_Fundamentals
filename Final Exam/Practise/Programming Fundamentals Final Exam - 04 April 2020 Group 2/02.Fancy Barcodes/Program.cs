@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using System.Text.RegularExpressions;
 
 namespace _02.Fancy_Barcodes
@@ -20,16 +21,18 @@ namespace _02.Fancy_Barcodes
                 {
                     string barcode = Regex.Match(input, pattern).Groups["code"].ToString();
 
-                    string productGroup = string.Empty;
+                    StringBuilder sb = new StringBuilder();
 
                     for (int j = 0; j < barcode.Length; j++)
                     {
                         
                         if (char.IsDigit(barcode[j]))
                         {
-                            productGroup += barcode[j];
+                            sb.Append(barcode[j]);
                         }
                     }
+
+                    string productGroup = sb.ToString();
 
                     if (productGroup == "")
                     {
