@@ -92,10 +92,11 @@ namespace _03.Need_for_Speed_III
                         if (carsCollection[carToRevert].Mileage < 10000)
                         {
                             carsCollection[carToRevert].Mileage = 10000;
-                            break;
                         }
-
-                        Console.WriteLine($"{carToRevert} mileage decreased by {mileageToRevert} kilometers");
+                        else
+                        {
+                            Console.WriteLine($"{carToRevert} mileage decreased by {mileageToRevert} kilometers");
+                        }
 
                         break;
                         

@@ -24,7 +24,7 @@ namespace _02.Mirror_words
                 string firstWord = pair.Groups["firstWord"].Value;
                 string secondWord = pair.Groups["secondWord"].Value;
 
-                string firstWordReversed = new String(firstWord.ToCharArray().Reverse().ToArray());
+                string firstWordReversed = new String(firstWord.Reverse().ToArray());
 
                 if (secondWord == firstWordReversed)
                 {
@@ -54,9 +54,6 @@ namespace _02.Mirror_words
                     Console.WriteLine(string.Join(", ", mirrorWords));
                 }
             }
-
-
-
         }
     }
 }

@@ -33,7 +33,7 @@ namespace _01._Secret_Chat
 
                         if (message.Contains(substr))
                         {
-                            string substrReversed = new string(substr.ToCharArray().Reverse().ToArray());
+                            string substrReversed = new string(substr.Reverse().ToArray());
 
                             message = message.Remove(message.IndexOf(substr), substr.Length);
 
@@ -53,10 +53,7 @@ namespace _01._Secret_Chat
                         string substrToReplace = command[1];
                         string replacement = command[2];
 
-                        while (message.Contains(substrToReplace))
-                        {
-                            message = message.Replace(substrToReplace, replacement);
-                        }
+                        message = message.Replace(substrToReplace, replacement);
 
                         break;
                 }

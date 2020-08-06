@@ -75,12 +75,13 @@ namespace _03._P_rates
                         if (gold < 0)
                         {
                             Console.WriteLine("Gold added cannot be a negative number!");
-                            break;
                         }
+                        else
+                        {
+                            cities[town].Gold += gold;
 
-                        cities[town].Gold += gold;
-
-                        Console.WriteLine($"{gold} gold added to the city treasury. {town} now has {cities[town].Gold} gold.");
+                            Console.WriteLine($"{gold} gold added to the city treasury. {town} now has {cities[town].Gold} gold.");
+                        }
 
                         break;
                 }
@@ -90,7 +91,7 @@ namespace _03._P_rates
             {
                 Console.WriteLine($"Ahoy, Captain! There are {cities.Count} wealthy settlements to go to:");
 
-                foreach (var city in cities.OrderByDescending(x => x.Value.Gold).ThenBy(x => x.Key))
+                foreach (var city in cities.OrderByDescending(v => v.Value.Gold).ThenBy(k => k.Key))
                 {
                     Console.WriteLine($"{city.Key} -> Population: {city.Value.Population} citizens, Gold: {city.Value.Gold} kg");
                 }
@@ -99,9 +100,6 @@ namespace _03._P_rates
             {
                 Console.WriteLine("Ahoy, Captain! All targets have been plundered and destroyed!");
             }
-
-            
-
         }
     }
 
