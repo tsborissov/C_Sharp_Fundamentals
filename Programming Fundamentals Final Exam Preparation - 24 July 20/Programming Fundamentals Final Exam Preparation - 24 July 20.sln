@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concert", "Concert\Concert.csproj", "{A70A6D24-7424-4DE5-91FA-36E2D610D875}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concert", "Concert\Concert.csproj", "{A70A6D24-7424-4DE5-91FA-36E2D610D875}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concert with Class", "Concert with Class\Concert with Class.csproj", "{CD28BF99-E7F1-4639-9FC6-EBF83D4BF01A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concert with Class", "Concert with Class\Concert with Class.csproj", "{CD28BF99-E7F1-4639-9FC6-EBF83D4BF01A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Song Encryption", "Song Encryption\Song Encryption.csproj", "{48564D58-7707-47D5-964C-18511224778C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{CD28BF99-E7F1-4639-9FC6-EBF83D4BF01A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD28BF99-E7F1-4639-9FC6-EBF83D4BF01A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD28BF99-E7F1-4639-9FC6-EBF83D4BF01A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48564D58-7707-47D5-964C-18511224778C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48564D58-7707-47D5-964C-18511224778C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48564D58-7707-47D5-964C-18511224778C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48564D58-7707-47D5-964C-18511224778C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
