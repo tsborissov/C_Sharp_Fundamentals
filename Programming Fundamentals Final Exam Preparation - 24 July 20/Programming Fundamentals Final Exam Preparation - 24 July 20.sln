@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concert with Class", "Conce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Song Encryption", "Song Encryption\Song Encryption.csproj", "{48564D58-7707-47D5-964C-18511224778C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Isle of Man TT Race", "The Isle of Man TT Race\The Isle of Man TT Race.csproj", "{D195F72D-181A-4F11-878F-7E4D456BEBBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{48564D58-7707-47D5-964C-18511224778C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48564D58-7707-47D5-964C-18511224778C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48564D58-7707-47D5-964C-18511224778C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D195F72D-181A-4F11-878F-7E4D456BEBBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D195F72D-181A-4F11-878F-7E4D456BEBBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D195F72D-181A-4F11-878F-7E4D456BEBBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D195F72D-181A-4F11-878F-7E4D456BEBBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
