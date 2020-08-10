@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _03.Plant_Discovery
+namespace _03.Plants_Discovery_with_Class_ver._02
 {
     class Program
     {
         static void Main(string[] args)
         {
-
             int n = int.Parse(Console.ReadLine());
 
-            Dictionary<string, Dictionary<string, List<int>>> plants = new Dictionary<string, Dictionary<string, List<int>>>();
+            Dictionary<string, Plant> plants = new Dictionary<string, Plant>();
 
             for (int i = 0; i < n; i++)
             {
@@ -23,18 +22,19 @@ namespace _03.Plant_Discovery
                 if (!plants.ContainsKey(name))
                 {
 
-                    plants.Add(name, new Dictionary<string, List<int>>
-                    {
-                        {"rarity", new List<int>() {rarity}},
-                        {"rating", new List<int>()}
-                    });
+                    plants.Add(name, new Plant());
 
+                    plants[name].Name = name;
+                    plants[name].Rarity = rarity;
+                    plants[name].Rating = new List<int>();
                 }
                 else
                 {
-                    plants[name]["rarity"][0] = rarity;
+                    plants[name].Rarity = rarity;
                 }
             }
+
+            char[] delimiters = new char[] { ':', '-', ' ' };
 
             while (true)
             {
@@ -44,18 +44,18 @@ namespace _03.Plant_Discovery
                     break;
                 }
 
-                string[] command = commandInput.Split(": ", StringSplitOptions.RemoveEmptyEntries).ToArray();
+                string[] command = commandInput.Split(delimiters, StringSplitOptions.RemoveEmptyEntries).ToArray();
 
                 switch (command[0])
                 {
                     case "Rate":
 
-                        string plantToRate = command[1].Split(" - ", StringSplitOptions.RemoveEmptyEntries).ToArray()[0];
-                        int rating = int.Parse(command[1].Split(" - ", StringSplitOptions.RemoveEmptyEntries).ToArray()[1]);
+                        string plantToRate = command[1];
+                        int rating = int.Parse(command[2]);
 
                         if (plants.ContainsKey(plantToRate))
                         {
-                            plants[plantToRate]["rating"].Add(rating);
+                            plants[plantToRate].Rating.Add(rating);
                         }
                         else
                         {
@@ -66,12 +66,12 @@ namespace _03.Plant_Discovery
 
                     case "Update":
 
-                        string plantToUpdate = command[1].Split(" - ", StringSplitOptions.RemoveEmptyEntries).ToArray()[0];
-                        int newRarity = int.Parse(command[1].Split(" - ", StringSplitOptions.RemoveEmptyEntries).ToArray()[1]);
+                        string plantToUpdate = command[1];
+                        int newRarity = int.Parse(command[2]);
 
                         if (plants.ContainsKey(plantToUpdate))
                         {
-                            plants[plantToUpdate]["rarity"][0] = newRarity;
+                            plants[plantToUpdate].Rarity = newRarity;
                         }
                         else
                         {
@@ -86,7 +86,7 @@ namespace _03.Plant_Discovery
 
                         if (plants.ContainsKey(plantToReset))
                         {
-                            plants[plantToReset]["rating"].Clear();
+                            plants[plantToReset].Rating.Clear();
                         }
                         else
                         {
@@ -100,13 +100,31 @@ namespace _03.Plant_Discovery
 
             Console.WriteLine("Plants for the exhibition:");
 
-            foreach (var plant in plants.OrderByDescending(x => x.Value["rarity"][0]).ThenByDescending(x => x.Value["rating"].Count > 0 ? x.Value["rating"].Average() : 0.00))
+            foreach (var item in plants.OrderByDescending(x => x.Value.Rarity).ThenByDescending(y => y.Value.AverageRating))
             {
-                double ratingAverage = plant.Value["rating"].Count > 0 ? plant.Value["rating"].Average() : 0.00;
-
-                Console.WriteLine($"- {plant.Key}; Rarity: {plant.Value["rarity"][0]}; Rating: {ratingAverage:F2}");
+                Console.WriteLine($"- {item.Key}; Rarity: {item.Value.Rarity}; Rating: {item.Value.AverageRating:F2}");
             }
 
+        }
+    }
+
+    class Plant
+    {
+        public string Name { get; set; }
+        public int Rarity { get; set; }
+        public List<int> Rating { get; set; }
+
+        private double averageRating;
+        public double AverageRating 
+        { 
+            get 
+            { 
+                return averageRating;
+            }
+            set 
+            {
+                averageRating = Rating.Count > 0 ? Rating.Average() : 0;
+            }
         }
     }
 }
